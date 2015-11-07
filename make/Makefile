@@ -14,16 +14,16 @@
 # project, except GMOCK_HEADERS and GTEST_HEADERS, which you can use
 # in your own targets but shouldn't modify.
 
-PROJECT_TOP ?= $(shell pwd)/../
+PROJECT_TOP ?= $(shell pwd)/../../..
 
 # Points to the root of Google Test, relative to where this file is.
 # Remember to tweak this if you move this file, or if you want to use
 # a copy of Google Test at a different location.
-GTEST_DIR = ${PROJECT_TOP}/gtest
+GTEST_DIR = ${PROJECT_TOP}/testing/gtest
 
 # Points to the root of Google Mock, relative to where this file is.
 # Remember to tweak this if you move this file.
-GMOCK_DIR = ${PROJECT_TOP}/gmock
+GMOCK_DIR = ${PROJECT_TOP}/testing/gmock
 
 # Where to find user code.
 USER_DIR = ../test
